@@ -24,6 +24,7 @@
 #include <string>
 
 namespace commonthings {
+    //Ask User, references the variable
     void askUser(unsigned int& n, std::string msg);
     void askUser(long unsigned int& n, std::string msg);
     void askUser(long long unsigned int& n, std::string msg);
@@ -40,6 +41,15 @@ namespace commonthings {
     void askUser(char& n, std::string msg);
     
     void askUser(std::string& n, std::string msg);
+
+    //Test the eveness of a number, return true for even, false for odd
+    bool isEven(unsigned int n);
+    bool isEven(long unsigned int n);
+    bool isEven(long long unsigned int n);
+
+    bool isEven(int n);
+    bool isEven(long int n);
+    bool isEven(long long int n);
 
 }
 
