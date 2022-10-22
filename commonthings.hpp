@@ -63,7 +63,6 @@ namespace commonthings {
         
         double average(const long t[], int size); //Returns the average of the content of an array of long int
         double average(const long long t[], int size); //Returns the average of the content of an array of long long int
-        double average(const long double t[], int size); //Returns the average of the content of an array of long double
         
         double average(const unsigned int t[], int size); //Returns the average of the content of an array of unsigned int
         double average(const unsigned long t[], int size); //Returns the average of the content of an array of unsigned long int
@@ -75,7 +74,6 @@ namespace commonthings {
         
         double average(const std::vector<long> t); //Returns the average of the content of an vector of long int
         double average(const std::vector<long long> t); //Returns the average of the content of an vector of long long int
-        double average(const std::vector<long double> t); //Returns the average of the content of an vector of long double
         
         double average(const std::vector<unsigned> t); //Returns the average of the content of an vector of unsigned int
         double average(const std::vector<unsigned long> t); //Returns the average of the content of an vector of unsigned long int
