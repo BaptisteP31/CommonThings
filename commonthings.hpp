@@ -82,8 +82,6 @@ namespace commonthings {
         double average(const std::vector<unsigned long long> t); //Returns the average of the content of an vector of unsigned long long int
     }
 
-}
-
     namespace armanip {
         //Fonctions used to manipulate arrays
         unsigned int popBack(unsigned int tab[], size_t& n); //Removes the last item of an array
