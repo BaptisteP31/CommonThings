@@ -225,4 +225,118 @@ namespace commonthings {
             return sum / t.size();
         }
     }
+
+    namespace armanip {
+        //Removes the last item of an array
+        unsigned int popBack(unsigned int tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        long unsigned int popBack(long unsigned int tab[], size_t& n) {
+            return tab[--n];
+        } 
+
+        long long unsigned int popBack(long long unsigned int tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        int popBack(int tab[], size_t& n) {
+            return tab[--n];
+        } 
+            
+        long int popBack(long int tab[], size_t& n) {
+            return tab[--n];
+        } 
+        
+        long long int popBack(long long int tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        double popBack(double tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        long double popBack(long double tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        float popBack(float tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        char popBack(char tab[], size_t& n){
+            return tab[--n];
+        } 
+
+        std::string popBack(std::string tab[], size_t& n){
+            return tab[--n];
+        }
+
+        //Removes the first item of an array
+        unsigned int popFront(unsigned int tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        long unsigned int popFront(long unsigned int tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        long long unsigned int popFront(long long unsigned int tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        int popFront(int tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        long int popFront(long int tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        long long int popFront(long long int tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        double popFront(double tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        long double popFront(long double tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        float popFront(float tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        char popFront(char tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+
+        std::string popFront(std::string tab[], size_t& n) {
+            for(size_t i=1; i<n; i++)
+                tab[i-1]=tab[i];
+            return tab[--n]; 
+        }
+    }
 }
