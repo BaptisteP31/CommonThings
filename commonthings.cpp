@@ -118,7 +118,7 @@ namespace commonthings {
     }
     
     namespace calculation {
-    
+    //All calculation functions
         double average(double t[], int size) {
             double sum = 0;
             
@@ -154,4 +154,4 @@ namespace commonthings {
 
             return sum / t.size();
         }
-}
+        }
