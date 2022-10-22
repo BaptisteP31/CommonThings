@@ -177,9 +177,11 @@ namespace commonthings {
         bool isEven(int n) {
             return (n%2==0);
         }
+
         bool isEven(long int n) {
             return (n%2==0);
         }
+        
         bool isEven(long long int n) {
             return (n%2==0);
         }
