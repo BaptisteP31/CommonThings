@@ -1,4 +1,6 @@
-<img src="https://zupimages.net/up/22/39/mfva.png" width="200" height="200" />
+<p align="center">
+    <img src="CommonThings.png" width="200" />
+    <h1 align="center">CommonThings</h1>
+</p>
 
-# CommonThings
- C++ library used to do ... well, common things.
+C++ library used to do ... well, common things.
