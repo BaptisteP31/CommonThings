@@ -60,6 +60,7 @@ namespace commonthings {
     namespace calculation {
         double average(const double t[], int size); //Returns the average of the content of an array of double
         double average(const int t[], int size); //Returns the average of the content of an array of int
+        double average(const float t[}, int size); //Returns the average of the content of an array of float
         
         double average(const long t[], int size); //Returns the average of the content of an array of long int
         double average(const long long t[], int size); //Returns the average of the content of an array of long long int
