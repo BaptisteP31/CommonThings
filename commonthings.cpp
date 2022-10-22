@@ -17,103 +17,171 @@
 +-----------------------------------------------------------------------------------+
 */
 
+#include <limits>
 #include "commonthings.hpp"
 
 namespace commonthings {
     
     namespace userinput {
+        void handleWrongInput(const std::string error) { //Used to handle wrong input
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+            std::cout << error << std::endl;
+        }
+
         //Ask User, references the variable
-        void askUser(unsigned int& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(unsigned int& n, std::string msg, const std::string error="Invalid input") { //Reference to variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
-        void askUser(long unsigned int& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(long unsigned int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
-        void askUser(long long unsigned int& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(long long unsigned int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
 
-        void askUser(int& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
-        }
-        void askUser(long int& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
-        }
-        void askUser(long long int& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
 
-        void askUser(double& n, std::string msg){ 
-            std::cout << msg << "> ";
-            std::cin >> n;
-        }
-        void askUser(long double& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(long int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
 
-        void askUser(float& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(long long int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
 
-        void askUser(char& n, std::string msg) {
-            std::cout << msg << "> ";
-            std::cin >> n;
+        void askUser(double& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
+        }
+        void askUser(long double& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
+        }
+
+        void askUser(float& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
+        }
+
+        void askUser(char& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
         }
         
-        void askUser(std::string& n, std::string msg) {
-        std::cout << msg << "> ";
-        std::cin >> n;
-    }
+        void askUser(std::string& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
+        }
     }
 
     namespace booltest {
     //Test the eveness of a number, return true for even, false for odd
-    bool isEven(unsigned int n) {
-        bool even = false;
-        (n%2==0)?even=true:even=false;
+        bool isEven(unsigned int n) {
+            return (n%2==0);
+        }
 
-        return even;
-    }
+        bool isEven(long unsigned int n) {
+            return (n%2==0);
+        }
 
-    bool isEven(long unsigned int n) {
-                bool even = false;
-        (n%2==0)?even=true:even=false;
-        
-        return even;
-    }
+        bool isEven(long long unsigned int n) {
+            return (n%2==0);
+        }
 
-    bool isEven(long long unsigned int n) {
-                bool even = false;
-        (n%2==0)?even=true:even=false;
-        
-        return even;
-    }
-
-    bool isEven(int n) {
-                bool even = false;
-        (n%2==0)?even=true:even=false;
-        
-        return even;
-    }
-    bool isEven(long int n) {
-                bool even = false;
-        (n%2==0)?even=true:even=false;
-        
-        return even;
-    }
-    bool isEven(long long int n) {
-                bool even = false;
-        (n%2==0)?even=true:even=false;
-        
-        return even;
-    }
+        bool isEven(int n) {
+            return (n%2==0);
+        }
+        bool isEven(long int n) {
+            return (n%2==0);
+        }
+        bool isEven(long long int n) {
+            return (n%2==0);
+        }
     }
 }

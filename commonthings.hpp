@@ -27,36 +27,35 @@ namespace commonthings {
 
     namespace userinput {
     //Ask User, references the variable
-    void askUser(unsigned int& n, std::string msg);
-    void askUser(long unsigned int& n, std::string msg);
-    void askUser(long long unsigned int& n, std::string msg);
+        void askUser(unsigned int& n, std::string msg); //Reference to variable, string to ask, optional error message
+        void askUser(long unsigned int& n, std::string msg); //Reference to variable, string to ask, optional error message
+        void askUser(long long unsigned int& n, std::string msg); //Reference to variable, string to ask, optional error message
 
-    void askUser(int& n, std::string msg);
-    void askUser(long int& n, std::string msg);
-    void askUser(long long int& n, std::string msg);
+        void askUser(int& n, std::string msg); //Reference to variable, string to ask, optional error message
+        void askUser(long int& n, std::string msg); //Reference to variable, string to ask, optional error message
+        void askUser(long long int& n, std::string msg); //Reference to variable, string to ask, optional error message
 
-    void askUser(double& n, std::string msg);
-    void askUser(long double& n, std::string msg);
+        void askUser(double& n, std::string msg); //Reference to variable, string to ask, optional error message
+        void askUser(long double& n, std::string msg); //Reference to variable, string to ask, optional error message
 
-    void askUser(float& n, std::string msg);
+        void askUser(float& n, std::string msg); //Reference to variable, string to ask, optional error message
 
-    void askUser(char& n, std::string msg);
-    
-    void askUser(std::string& n, std::string msg);
+        void askUser(char& n, std::string msg); //Reference to variable, string to ask, optional error message
+        
+        void askUser(std::string& n, std::string msg); //Reference to variable, string to ask, optional error message
     }
 
     namespace bootest {
-    //Test the eveness of a number, return true for even, false for odd
-    bool isEven(unsigned int n);
-    bool isEven(long unsigned int n);
-    bool isEven(long long unsigned int n);
+    
+        bool isEven(unsigned int n); //Test the eveness of a number, return true for even, false for odd
+        bool isEven(long unsigned int n); //Test the eveness of a number, return true for even, false for odd
+        bool isEven(long long unsigned int n); //Test the eveness of a number, return true for even, false for odd
 
-    bool isEven(int n);
-    bool isEven(long int n);
-    bool isEven(long long int n);
+        bool isEven(int n); //Test the eveness of a number, return true for even, false for odd
+        bool isEven(long int n); //Test the eveness of a number, return true for even, false for odd
+        bool isEven(long long int n); //Test the eveness of a number, return true for even, false for odd
     }
 
 }
-
 
 #endif
