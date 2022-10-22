@@ -30,7 +30,7 @@ namespace commonthings {
         }
 
         //Ask User, references the variable
-        void askUser(unsigned int& n, std::string msg, const std::string error="Invalid input") { //Reference to variable, string to ask, optional error message
+        void askUser(unsigned int& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference to variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -41,7 +41,7 @@ namespace commonthings {
                     break;
             }
         }
-        void askUser(long unsigned int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(long unsigned int& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -52,19 +52,7 @@ namespace commonthings {
                     break;
             }
         }
-        void askUser(long long unsigned int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
-            while(true) {
-                std::cout << msg << "> ";
-                std::cin >> n;
-
-                if(std::cin.fail())
-                    handleWrongInput(error);
-                else
-                    break;
-            }
-        }
-
-        void askUser(int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(long long unsigned int& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -76,7 +64,7 @@ namespace commonthings {
             }
         }
 
-        void askUser(long int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(int& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -88,7 +76,7 @@ namespace commonthings {
             }
         }
 
-        void askUser(long long int& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(long int& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -100,18 +88,7 @@ namespace commonthings {
             }
         }
 
-        void askUser(double& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
-            while(true) {
-                std::cout << msg << "> ";
-                std::cin >> n;
-
-                if(std::cin.fail())
-                    handleWrongInput(error);
-                else
-                    break;
-            }
-        }
-        void askUser(long double& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(long long int& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -123,7 +100,18 @@ namespace commonthings {
             }
         }
 
-        void askUser(float& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(double& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
+        }
+        void askUser(long double& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -135,7 +123,19 @@ namespace commonthings {
             }
         }
 
-        void askUser(char& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(float& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
+            while(true) {
+                std::cout << msg << "> ";
+                std::cin >> n;
+
+                if(std::cin.fail())
+                    handleWrongInput(error);
+                else
+                    break;
+            }
+        }
+
+        void askUser(char& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -147,7 +147,7 @@ namespace commonthings {
             }
         }
         
-        void askUser(std::string& n, std::string msg, const std::string error="Invalid input") { //Reference variable, string to ask, optional error message
+        void askUser(std::string& n, std::string msg, const std::string error/*="Invalid input"*/) { //Reference variable, string to ask, optional error message
             while(true) {
                 std::cout << msg << "> ";
                 std::cin >> n;
@@ -439,4 +439,3 @@ namespace commonthings {
         }
     }
 }
-
