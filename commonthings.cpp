@@ -187,7 +187,7 @@ namespace commonthings {
     
     namespace calculation {
     //All calculation functions
-        double average(double t[], int size) {
+        double average(const double t[], int size) {
             double sum = 0;
             
             for (int i = 0; i < size; ++i)
@@ -196,7 +196,7 @@ namespace commonthings {
             return sum / (double)size;
         }
         
-        double average(int t[], int size) {
+        double average(const int t[], int size) {
             double sum = 0;
             
             for (int i = 0; i < size; ++i)

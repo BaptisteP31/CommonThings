@@ -58,10 +58,10 @@ namespace commonthings {
     }
     
     namespace calculation {
-        double average(double t[], int size);
-        double average(int t[], int size);
-        double average(std::vector<int> t);
-        double average(std::vector<double> t);
+        double average(const double t[], int size); //Returns the averages of the content of an array of double
+        double average(const int t[], int size); //Returns the averages of the content of an array of int
+        double average(const std::vector<int> t); //Returns the averages of the content of a vector of int
+        double average(const std::vector<double> t); //Returns the averages of the content of a vector of double
     }
 }
 
