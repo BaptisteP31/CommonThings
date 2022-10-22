@@ -225,6 +225,42 @@ namespace commonthings {
             return sum / size;
         }
         
+        double average(const unsigned long double t[], int size) {
+            double sum = 0;
+            
+            for (int i = 0; i < size; ++i)
+                sum += t[i];
+     
+            return sum / size;
+        }
+        
+        double average(const unsigned t[], int size) {
+            double sum = 0;
+            
+            for (int i = 0; i < size; ++i)
+                sum += t[i];
+     
+            return sum / size;
+        }
+        double average(const unsigned long t[], int size) {
+            double sum = 0;
+            
+            for (int i = 0; i < size; ++i)
+                sum += t[i];
+     
+            return sum / size;
+        }
+        
+        double average(const unsigned long long t[], int size) {
+            double sum = 0;
+            
+            for (int i = 0; i < size; ++i)
+                sum += t[i];
+     
+            return sum / size;
+        }
+        
+        
         double average(std::vector<int> t) {
             double sum = 0;
             
@@ -256,6 +292,15 @@ namespace commonthings {
             double sum = 0;
             
             for (long long &i : t)
+                sum += i;
+
+            return sum / t.size();
+        }
+        
+        double average(const std::vector<long double> t) {
+            double sum = 0;
+            
+            for (long double &i : t)
                 sum += i;
 
             return sum / t.size();
