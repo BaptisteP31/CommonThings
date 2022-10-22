@@ -60,7 +60,8 @@ namespace commonthings {
     namespace calculation {
         double average(double t[], int size);
         double average(int t[], int size);
-        double average(std::vector t);
+        double average(std::vector<int> t);
+        double average(std::vector<double> t);
     }
 }
 
