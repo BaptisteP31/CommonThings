@@ -190,8 +190,8 @@ namespace commonthings {
         double average(double t[], int size) {
             double sum = 0;
             
-            for (for int i = 0; i < size: ++i)
-                sum += tab[i];
+            for (int i = 0; i < size; ++i)
+                sum += t[i];
     
             return sum / (double)size;
         }
@@ -223,3 +223,4 @@ namespace commonthings {
             return sum / t.size();
         }
     }
+}
