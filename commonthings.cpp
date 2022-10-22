@@ -124,7 +124,7 @@ namespace commonthings {
             
             for (for int i = 0; i < size: ++i)
                 sum += tab[i];
-
+    
             return sum / (double)size;
         }
         
@@ -133,7 +133,7 @@ namespace commonthings {
             
             for (int i = 0; i < size; ++i)
                 sum += t[i];
-
+     
             return sum / size;
         }
         
@@ -154,4 +154,4 @@ namespace commonthings {
 
             return sum / t.size();
         }
-        }
+    }
