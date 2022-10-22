@@ -58,11 +58,31 @@ namespace commonthings {
     }
     
     namespace calculation {
-        double average(const double t[], int size); //Returns the averages of the content of an array of double
-        double average(const int t[], int size); //Returns the averages of the content of an array of int
-        double average(const std::vector<int> t); //Returns the averages of the content of a vector of int
-        double average(const std::vector<double> t); //Returns the averages of the content of a vector of double
+        double average(const double t[], int size); //Returns the average of the content of an array of double
+        double average(const int t[], int size); //Returns the average of the content of an array of int
+        
+        double average(const long t[], int size); //Returns the average of the content of an array of long int
+        double average(const long long t[], int size); //Returns the average of the content of an array of long long int
+        double average(const long double t[], int size); //Returns the average of the content of an array of long double
+        
+        double average(const unsigned int t[], int size); //Returns the average of the content of an array of unsigned int
+        double average(const unsigned long t[], int size); //Returns the average of the content of an array of unsigned long int
+        double average(const unsigned long long t[], int size); //Returns the average of the content of an array of unsigned long long int
+        
+        
+        double average(const std::vector<int> t); //Returns the average of the content of a vector of int
+        double average(const std::vector<double> t); //Returns the average of the content of a vector of double
+        
+        double average(const std::vector<long> t); //Returns the average of the content of an vector of long int
+        double average(const std::vector<long long> t); //Returns the average of the content of an vector of long long int
+        double average(const std::vector<long double> t); //Returns the average of the content of an vector of long double
+        
+        double average(const std::vector<unsigned> t); //Returns the average of the content of an vector of unsigned int
+        double average(const std::vector<unsigned long> t); //Returns the average of the content of an vector of unsigned long int
+        double average(const std::vector<unsigned long long> t); //Returns the average of the content of an vector of unsigned long long int
     }
+
+}
 
     namespace armanip {
         //Fonctions used to manipulate arrays
