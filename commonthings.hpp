@@ -22,6 +22,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 namespace commonthings {
 
@@ -55,6 +56,11 @@ namespace commonthings {
     bool isEven(long int n);
     bool isEven(long long int n);
     }
+    
+    namespace calculation {
+        double average(double t[], int size);
+        double average(int t[], int size);
+        double average(std::vector t);
 
 }
 
