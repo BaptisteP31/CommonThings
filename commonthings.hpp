@@ -27,7 +27,7 @@
 namespace commonthings {
 
     namespace userinput {
-    //Ask User, references the variable
+        
         void askUser(unsigned int& n, std::string msg); //Reference to variable, string to ask, optional error message
         void askUser(long unsigned int& n, std::string msg); //Reference to variable, string to ask, optional error message
         void askUser(long long unsigned int& n, std::string msg); //Reference to variable, string to ask, optional error message
@@ -65,7 +65,7 @@ namespace commonthings {
         double average(const long long t[], int size); //Returns the average of the content of an array of long long int
         double average(const long double t[], int size); //Returns the average of the content of an array of long double
         
-        double average(const unsigned t[], int size); //Returns the average of the content of an array of unsigned int
+        double average(const unsigned int t[], int size); //Returns the average of the content of an array of unsigned int
         double average(const unsigned long t[], int size); //Returns the average of the content of an array of unsigned long int
         double average(const unsigned long long t[], int size); //Returns the average of the content of an array of unsigned long long int
         
@@ -81,6 +81,47 @@ namespace commonthings {
         double average(const std::vector<unsigned long> t); //Returns the average of the content of an vector of unsigned long int
         double average(const std::vector<unsigned long long> t); //Returns the average of the content of an vector of unsigned long long int
     }
-}                
-        
+
+}
+
+    namespace armanip {
+        //Fonctions used to manipulate arrays
+        unsigned int popBack(unsigned int tab[], size_t& n); //Removes the last item of an array
+        long unsigned int popBack(long unsigned int tab[], size_t& n); //Removes the last item of an array
+        long long unsigned int popBack(long long unsigned int tab[], size_t& n); //Removes the last item of an array
+
+        int popBack(int tab[], size_t& n); //Removes the last item of an array
+        long int popBack(long int tab[], size_t& n); //Removes the last item of an array
+        long long int popBack(long long int tab[], size_t& n); //Removes the last item of an array
+
+        double popBack(double tab[], size_t& n); //Removes the last item of an array
+        long double popBack(long double tab[], size_t& n); //Removes the last item of an array
+
+        float popBack(float tab[], size_t& n); //Removes the last item of an array
+
+        char popBack(char tab[], size_t& n); //Removes the last item of an array
+
+        std::string popBack(std::string tab[], size_t& n); //Removes the last item of an array
+
+
+        unsigned int popFront(unsigned int tab[], size_t& n); //Removes the first item of an array
+        long unsigned int popFront(long unsigned int tab[], size_t& n); //Removes the first item of an array
+        long long unsigned int popFront(long long unsigned int tab[], size_t& n); //Removes the first item of an array
+
+        int popFront(int tab[], size_t& n); //Removes the first item of an array
+        long int popFront(long int tab[], size_t& n); //Removes the first item of an array
+        long long int popFront(long long int tab[], size_t& n); //Removes the first item of an array
+
+        double popFront(double tab[], size_t& n); //Removes the first item of an array
+        long double popFront(long double tab[], size_t& n); //Removes the first item of an array
+
+        float popFront(float tab[], size_t& n); //Removes the first item of an array
+
+        char popFront(char tab[], size_t& n); //Removes the first item of an array
+
+        std::string popFront(std::string tab[], size_t& n); //Removes the first item of an array
+
+    }
+}
+
 #endif
