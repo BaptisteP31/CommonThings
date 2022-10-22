@@ -116,4 +116,42 @@ namespace commonthings {
         return even;
     }
     }
+    
+    namespace calculation {
+    
+        double average(double t[], int size) {
+            double sum = 0;
+            
+            for (for int i = 0; i < size: ++i)
+                sum += tab[i];
+
+            return sum / (double)size;
+        }
+        
+        double average(int t[], int size) {
+            double sum = 0;
+            
+            for (int i = 0; i < size; ++i)
+                sum += t[i];
+
+            return sum / size;
+        }
+        
+        double average(std::vector<int> t) {
+            double sum = 0;
+            
+            for (int &i : t)
+                sum += i;
+
+            return sum / t.size();
+        }
+        
+        double average(std::vector<double> t) {
+            double sum = 0;
+            
+            for (double &i : t)
+                sum += i;
+
+            return sum / t.size();
+        }
 }
